@@ -1,0 +1,756 @@
+@font-face {
+  font-family: "RelewayB";
+  src: url("/fonts/Raleway-Bold_0.ttf");
+}
+
+@font-face {
+  font-family: "RelewayL";
+  src: url("/fonts/Raleway-Light.ttf");
+}
+
+@font-face {
+  font-family: "RelewayH";
+  src: url("/fonts/Raleway-Black.ttf");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "RelewayL", Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+button {
+  border: none;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+/**
+********** navbar **********
+**/
+
+.navbar-toggle {
+  margin-top: 15px;
+}
+
+#navbar-logo {
+  display: block;
+  height: 100%;
+  padding: 5px;
+}
+
+#navbar-logo img {
+  height: 25px;
+  margin: 15px;
+  margin-left: 30px;
+}
+
+.menu-button {
+  font-family: 'RelewayB', Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 20px;
+  text-align: right;
+  text-transform: uppercase;
+  padding: 0px !important;
+  padding: 5px 0;
+  margin: 20px 15px;
+  display: block;
+}
+
+#page-navigation .menu-button:hover {
+  color: #ff6033;
+}
+
+.navbar-fixed-top {
+  border: none;
+}
+
+/**
+********* articles **********
+***/
+
+.article-headline .title {
+  font-family: "RelewayB", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 4.4rem;
+  text-align: center;
+}
+
+.article-content p {
+  font-size: 1.8rem;
+}
+
+/**
+******** HOME ********
+**/
+
+.home {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin: 0;
+  background-image: url("img/bg1.png");
+  background-position: 55% 20%;
+}
+
+.home-title {
+  font-family: "RelewayH", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 4.4rem;
+  text-align: left;
+}
+
+.jumbotron .home-description {
+  font-size: 1.7rem;
+}
+
+.cta-button {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 0px;
+  background-color: #ff6033;
+  box-shadow: 0px 5px 10px -1px rgba(0, 0, 0, .2);
+  font-size: 1.8rem;
+  font-family: "RelewayL", Arial, sans-serif;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+/**
+******** ABOUT ********
+**/
+
+.about-us {
+  background-color: #00b3b3;
+  background-image: url("/img/bg2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 20%;
+  margin-bottom: 0;
+}
+
+.about-us-content {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+
+/**
+******** SERVICES ********
+**/
+
+
+.services {
+  background-color: #70bfff;
+  padding-top: 0px;
+  padding-bottom: 46px;
+  background-image: url("/img/bg3.png");
+  background-repeat: no-repeat;
+  background-position: 95% 2%;
+  background-size: 20%;
+}
+
+.services .title {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.services-details {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.services-item {
+  background-color: #ffffff;
+  padding: 0;
+  margin-bottom: 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.services-details p {
+  float: left;
+  margin: 0;
+  font-family: "RelewayB", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.services-icon {
+  min-width: 100px;
+  height: 100%;
+  border-left: 1px solid black;
+  background-image: url("/img/icon-sprite.png");
+  background-repeat: no-repeat;
+}
+
+.services-item:nth-child(1) .services-icon {
+  background-position: center 22px;
+}
+
+.services-item:nth-child(2) .services-icon {
+  background-position: center -102px;
+}
+
+.services-item:nth-child(3) .services-icon {
+  background-position: center -220px;
+}
+
+.services-item:nth-child(4) .services-icon {
+  background-position: center -340px;
+}
+
+/**
+******** GALLERY ********
+**/
+
+.gallery {
+  background-color: #ffe92f;
+}
+
+.gallery .title-note {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.gallery-picture {
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-picture img {
+
+}
+
+.gallery-picture figcaption {
+    position: absolute;
+    bottom: -110px;
+    width: calc(100% - 30px);
+    padding: 6px;
+    max-height: 111px;
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    word-wrap: break-word;
+    transition: all .2s ease-in-out;
+    font-size: 1.4rem;
+}
+
+.gallery-picture:hover figcaption {
+  bottom: 0px;
+}
+
+.more.cta-button {
+  background-color: #5585a2;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/**
+********** SUBSCRIBE *********
+**/
+
+.subscribe-us {
+  background-image: url("/img/bg4.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: top right;
+  padding-bottom: 32px;
+}
+
+.subscribe-us .title {
+  font-size: 3rem;
+  margin-top: 42px;
+  margin-bottom: 25px;
+}
+
+.subscribe-us .title-note {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.subscribe-email-form input{
+  font-size: 1.5rem;
+  color: #262626;
+  border: 1px solid #262626;
+  padding: 14px;
+  margin-bottom: 34px;
+}
+
+.subscribe-btn {
+  background-color: #96b92c;
+}
+
+/**
+********* BLOG *********
+**/
+
+.blog {
+  background-color: #b07cf7;
+  color: #ffffff;
+  padding-bottom: 100px;
+}
+
+.blog .title-note {
+   text-align: center;
+   font-size: 1.7rem;
+}
+
+.blog-posts figure {
+  margin-bottom: 15px;
+
+}
+
+.blog-posts .post:last-child {
+  margin-bottom: 40px;
+}
+
+.post {
+  position: relative;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.post-img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.post figcaption {
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  width: calc(100% - 30px);
+  height: 100%;
+  padding: 15px;
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(5, 5, 5, 0.9) 99%);
+}
+
+.post-publ-date {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 3rem;
+  font-family: "RelewayB", Arial, sans-serif;
+  line-height: 30px;
+  text-align: center;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  background-color: rgba(33, 33, 33, 0.5);
+  border-radius: 5px;
+}
+
+.post-publ-month {
+  font-size: 2rem;
+  line-height: 20px;
+  display: block;
+}
+
+.post-note {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  width: calc(100% - 30px);
+}
+
+.post-note p {
+  font-size: 1.8rem;
+  font-family: "RelewayB", Arial, sans-serif;1
+}
+
+.post .author {
+  font-size: 1.2rem;
+}
+
+/**
+********* CONTACT *********
+**/
+
+.contact {
+  background-image: url("/img/bg5.png");
+  background-size: cover;
+}
+
+.contact .title-note {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.contact-form {
+  margin-bottom: 25px;
+}
+
+.message-data {
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(0, 196, 195, 0.5);
+  border: 0px;
+  font-size: 1.6rem;
+  color: #ffffff;
+  resize: none;
+  margin-bottom: 18px;
+  transition: all .3s ease-in-out;
+}
+
+textarea.message-data {
+  height: 20rem;
+}
+
+.message-data::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.message-data:focus {
+  outline: none;
+  background-color: rgba(0, 196, 195, 1);
+  border-left: 5px solid #355b82;
+}
+
+.our-contact-data {
+  color: #ffffff;
+}
+
+.contact-way {
+  margin-bottom: 32px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.contact-way h4 {
+  font-family: "RelewayB", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  margin: 0;
+}
+
+/**
+********* PAGE FOOTER *********
+**/
+
+.page-footer {
+  background-color: #262626;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #bababa;
+  min-height: 100px;
+}
+
+.page-footer div {
+  line-height: 34px;
+  text-align: center;
+}
+
+.page-footer p {
+  padding: 10px;
+}
+
+.logo-footer img {
+  height: 34px;
+  opacity: .5;
+}
+
+.page-author span {
+  font-family: "RelewayB", Arial, sans-serif;
+  font-weight: bold;
+  color: #ff2b57;
+}
+
+
+/*-------------------------- styles for tablets and desctops --------------------------------*/
+/*-------------------------- styles for tablets and desctops --------------------------------*/
+/*-------------------------- styles for tablets and desctops --------------------------------*/
+/*-------------------------- styles for tablets and desctops --------------------------------*/
+@media screen and (min-width: 768px ) {
+
+  .navigation {
+    margin-top: 30px;
+    transition: all .3s ease-in-out;
+  }
+
+  .navigation-scroll {
+    margin-top: 0px;
+  }
+
+  .navbar-default {
+    background-color: transparent;
+    border: none;
+  }
+
+  .navbar-default-scroll {
+    background-image: linear-gradient( to bottom,
+       #fff 0% ,
+       rgba(255, 255, 255, .2) 100% );
+  }
+
+  #navbar-logo img {
+    height: 50px;
+  }
+
+  .menu-button {
+    font-family: 'RelewayB', Arial, sans-serif;
+    font-size: 1em;
+    line-height: 20px;
+    padding: 5px 0 !important;
+    border-top: 3px solid transparent;
+    margin: 30px 15px;
+    display: block;
+  }
+
+  #page-navigation .menu-button:hover {
+    border-top: 3px solid #ff6033;
+    color: #333333;
+  }
+
+  /**
+  ******** HOME ********
+  **/
+
+  .home {
+    padding-top: 270px;
+    padding-bottom: 230px;
+  }
+
+  .home-title {
+    font-size: 6rem;
+  }
+
+  .jumbotron .home-description {
+    font-size: 2.1rem;
+  }
+
+  .cta-button {
+    font-size: 1.9rem;
+  }
+
+  /**
+  ******** ABOUT ********
+  **/
+
+  .about-us .title {
+    text-align: left;
+  }
+
+  /**
+  ******** SERVICES ********
+  **/
+
+  .services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-position: 82% center;
+    background-size: 28%;
+    position: relative;
+  }
+
+  .services .title {
+    font-size: 5rem;
+    margin-top: 200px;
+    text-align: right;
+  }
+
+  .services-item {
+    height: 100px;
+  }
+
+  .services-item:nth-child(1) .services-icon {
+    background-position: center 29px;
+  }
+
+  .services-item:nth-child(2) .services-icon {
+    background-position: center -95px;
+  }
+
+  .services-item:nth-child(3) .services-icon {
+    background-position: center -213px;
+  }
+
+  .services-item:nth-child(4) .services-icon {
+    background-position: center -332px;
+  }
+
+/**
+******** GALLERY **********
+**/
+
+  .gallery .title {
+    font-size: 9rem;
+  }
+
+  .gallery .title-note {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .gallery-picture {
+    margin-bottom: 30px;
+  }
+
+  .gallery-picture figcaption {
+      padding: 15px;
+      font-size: 2.5rem;
+  }
+
+  .gallery-picture.col-lg-4 figcaption {
+    font-size: 2rem;
+  }
+
+  .gallery-picture:hover figcaption {
+    bottom: 0px;
+  }
+
+  .more.cta-button {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+/**
+******** SUBSCRIBE ************
+**/
+
+  .subscribe-us {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .subscribe-us .title {
+    text-align: left;
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .subscribe-us .title-note {
+    padding: 0;
+    margin-bottom: 30px;
+    background-color: none;
+    font-size: 1.7rem;
+  }
+
+  .subscribe-email-form input{
+    font-size: 1.7rem;
+    color: #262626;
+    border: 1px solid #262626;
+    padding: 14px;
+    margin-bottom: 0;
+  }
+
+  .subscribe-btn {
+    margin-left: 30px;
+    background-color: #96b92c;
+  }
+
+  .subscribe-btn {
+    background-color: #96b92c;
+  }
+
+/**
+********* BLOG **********
+**/
+
+  .blog .title {
+    font-size: 9rem;
+  }
+
+  .post-publ-date {
+    top: 15px;
+    left: 20px;
+  }
+
+  .post-note p {
+    font-size: 1.4rem;
+  }
+
+
+/**
+********* CONTACT *********
+**/
+
+  .contact .title {
+    font-size: 9rem;
+  }
+
+/**
+********* PAGE FOOTER *********
+**/
+
+  .page-author {
+    text-align: right;
+  }
+
+  .logo-footer {
+    text-align: center;
+  }
+
+
+  .page-footer p {
+    padding: 0px;
+  }
+
+}
+
+
+
+/*******************************************************************/
+
+@media screen and (min-width: 992px ) {
+  .about-us {
+    background-position: -5%;
+  }
+
+  .about-us-content {
+    background-color: transparent;
+  }
+
+  .services .title {
+    font-size:7rem;
+  }
+
+  .subscribe-email-form input{
+    max-width: calc(50% - 15px);
+  }
+
+  .post-publ-date {
+    top: 30px;
+    left: 30px;
+  }
+
+  .post-note p {
+    font-size: 1.8rem;
+  }
+
+  .contact-way {
+    color: #000000;
+    margin-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+
+/**********************************************************************/
+
+@media screen and (min-width: 1200px ) {
+  .about-us {
+    background-position: 20%;
+  }
+
+  .services .title {
+    font-size: 8rem;
+  }
+}
