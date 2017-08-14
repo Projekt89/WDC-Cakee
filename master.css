@@ -1,16 +1,16 @@
 @font-face {
   font-family: "RelewayB";
-  src: url("/fonts/Raleway-Bold_0.ttf");
+  src: url("fonts/Raleway-Bold_0.ttf");
 }
 
 @font-face {
   font-family: "RelewayL";
-  src: url("/fonts/Raleway-Light.ttf");
+  src: url("fonts/Raleway-Light.ttf");
 }
 
 @font-face {
   font-family: "RelewayH";
-  src: url("/fonts/Raleway-Black.ttf");
+  src: url("fonts/Raleway-Black.ttf");
 }
 
 html {
@@ -126,7 +126,7 @@ button {
 
 .about-us {
   background-color: #00b3b3;
-  background-image: url("/img/bg2.png");
+  background-image: url("img/bg2.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 20%;
@@ -151,7 +151,7 @@ button {
   background-color: #70bfff;
   padding-top: 0px;
   padding-bottom: 46px;
-  background-image: url("/img/bg3.png");
+  background-image: url("img/bg3.png");
   background-repeat: no-repeat;
   background-position: 95% 2%;
   background-size: 20%;
@@ -192,7 +192,7 @@ button {
   min-width: 100px;
   height: 100%;
   border-left: 1px solid black;
-  background-image: url("/img/icon-sprite.png");
+  background-image: url("img/icon-sprite.png");
   background-repeat: no-repeat;
 }
 
@@ -264,7 +264,7 @@ button {
 **/
 
 .subscribe-us {
-  background-image: url("/img/bg4.png");
+  background-image: url("img/bg4.png");
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: top right;
@@ -380,7 +380,7 @@ button {
 **/
 
 .contact {
-  background-image: url("/img/bg5.png");
+  background-image: url("img/bg5.png");
   background-size: cover;
 }
 
